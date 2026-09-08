@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư — Foxy Junior</title>
+<style>
+  body{margin:0;background:#FFF6E8;color:#3D3A5C;font:16px/1.6 -apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+  h1{color:#5A4FBF;font-size:1.9rem;margin:.2em 0}
+  h2{color:#5A4FBF;font-size:1.25rem;margin-top:2em}
+  h3{font-size:1.05rem;margin-top:1.5em}
+  .meta{color:#6B6890;font-size:.95rem}
+  table{border-collapse:collapse;width:100%;font-size:.95rem}
+  th,td{border:1px solid #E4DFF5;padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#EDEAFB}
+  .lang{border-top:3px solid #EDEAFB;margin-top:3em;padding-top:1em}
+  ul{padding-left:1.2em}
+  a{color:#5A4FBF}
+  .wrap{overflow-x:auto}
+</style>
+</head>
+<body>
+<main>
+<h1>Chính sách quyền riêng tư — Foxy Junior</h1>
+<p class="meta">Ngày hiệu lực / Effective date: 08/09/2026 · Liên hệ / Contact: <a href="mailto:tantai.it95@gmail.com">tantai.it95@gmail.com</a></p>
+
+<p>Foxy Junior là ứng dụng học tiếng Anh qua trò chơi phiêu lưu cho trẻ 6–8 tuổi. Ứng dụng được thiết kế cho trẻ em, vì vậy quyền riêng tư của trẻ là ràng buộc thiết kế cao nhất, không phải một tuỳ chọn.</p>
+
+<h2>Chúng tôi KHÔNG làm gì</h2>
+<ul>
+<li><strong>Không bao giờ lưu giọng nói của trẻ.</strong> Khi trẻ luyện nói, âm thanh được truyền trực tiếp tới dịch vụ chấm phát âm (Microsoft Azure Speech) để chấm điểm theo thời gian thực và <strong>không được lưu lại</strong> ở bất kỳ đâu — không trên máy chủ của chúng tôi, không trên thiết bị.</li>
+<li><strong>Không lưu nội dung trẻ nói.</strong> Văn bản mà máy nhận dạng được từ giọng trẻ chỉ tồn tại trên thiết bị để hiển thị phản hồi, và không bao giờ được gửi lên máy chủ. Máy chủ chỉ nhận <strong>điểm số</strong> (con số).</li>
+<li><strong>Không thu thập thông tin cá nhân của trẻ</strong>: không tên thật, không ảnh, không email, không vị trí, không danh bạ.</li>
+<li><strong>Không quảng cáo, không theo dõi (tracking) quảng cáo, không bán dữ liệu.</strong></li>
+<li><strong>Không có liên kết ra ngoài</strong> trong khu vực của trẻ; mọi liên kết ngoài và cài đặt nằm sau cổng phụ huynh (parental gate).</li>
+</ul>
+
+<h2>Dữ liệu chúng tôi xử lý</h2>
+<div class="wrap"><table>
+<tr><th>Dữ liệu</th><th>Mục đích</th><th>Lưu ở đâu</th></tr>
+<tr><td>Tiến trình chơi (đảo, nhiệm vụ, coin, XP, vật phẩm)</td><td>Lưu tiến trình học</td><td>Trên thiết bị; đồng bộ lên máy chủ theo mã thiết bị ngẫu nhiên</td></tr>
+<tr><td>Điểm phát âm (chỉ con số 0–100)</td><td>Theo dõi chất lượng chấm điểm</td><td>Máy chủ (không kèm audio, không kèm văn bản)</td></tr>
+<tr><td>Sự kiện học tập ẩn danh (vd. "hoàn thành nhiệm vụ")</td><td>Cải thiện ứng dụng</td><td>Máy chủ, gắn với mã thiết bị ngẫu nhiên, tự động xoá sau 90 ngày</td></tr>
+<tr><td>Mã thiết bị ngẫu nhiên</td><td>Phân biệt thiết bị, không định danh người</td><td>Thiết bị + máy chủ</td></tr>
+</table></div>
+<p>Mã thiết bị do ứng dụng tự sinh ngẫu nhiên, không liên kết được với danh tính thực của trẻ hay gia đình.</p>
+
+<h2>Quyền truy cập hệ thống</h2>
+<ul><li><strong>Micro</strong>: chỉ dùng khi trẻ bấm giữ nút nói để luyện phát âm. Âm thanh được chấm điểm theo thời gian thực và không được ghi lại.</li></ul>
+
+<h2>Bên xử lý thay mặt chúng tôi</h2>
+<ul>
+<li><strong>Microsoft Azure Speech</strong> — chấm điểm phát âm theo thời gian thực (audio không được lưu).</li>
+<li><strong>Supabase / Railway</strong> — lưu trữ cơ sở dữ liệu và máy chủ (chỉ các dữ liệu trong bảng trên).</li>
+<li><strong>Sentry</strong> — báo lỗi kỹ thuật; báo cáo lỗi được lọc bỏ toàn bộ nội dung request trước khi gửi.</li>
+</ul>
+
+<h2>Quyền của phụ huynh</h2>
+<p>Phụ huynh có thể yêu cầu xem hoặc xoá toàn bộ dữ liệu gắn với thiết bị của con mình bằng cách email tới địa chỉ liên hệ ở đầu trang, kèm mã thiết bị (xem trong Cài đặt → khu vực phụ huynh). Xoá ứng dụng cũng xoá toàn bộ dữ liệu trên thiết bị.</p>
+
+<div class="lang">
+<h1>Privacy Policy — Foxy Junior (English)</h1>
+
+<p>Foxy Junior is an adventure game that teaches English speaking to children aged 6–8. It is designed for kids, so children's privacy is a hard design constraint, not an option.</p>
+
+<h2>What we never do</h2>
+<ul>
+<li><strong>We never store children's voice recordings.</strong> When a child practices speaking, audio is streamed directly to a pronunciation-scoring service (Microsoft Azure Speech) for real-time assessment and is <strong>not retained</strong> anywhere — not on our servers, not on the device.</li>
+<li><strong>We never store what a child said.</strong> The text recognized from a child's speech exists only on the device to show feedback and is never sent to our servers. Servers receive <strong>numeric scores only</strong>.</li>
+<li><strong>We collect no personal information from children</strong>: no real names, no photos, no email, no location, no contacts.</li>
+<li><strong>No ads, no ad tracking, no sale of data.</strong></li>
+<li><strong>No outbound links</strong> in the child area; external links and settings sit behind a parental gate.</li>
+</ul>
+
+<h2>Data we process</h2>
+<div class="wrap"><table>
+<tr><th>Data</th><th>Purpose</th><th>Where</th></tr>
+<tr><td>Game progress (islands, missions, coins, XP, items)</td><td>Save learning progress</td><td>On device; synced to our server under a random device id</td></tr>
+<tr><td>Pronunciation scores (numbers 0–100 only)</td><td>Monitor scoring quality</td><td>Server (no audio, no text)</td></tr>
+<tr><td>Anonymous learning events (e.g. "mission completed")</td><td>Improve the app</td><td>Server, keyed to a random device id, auto-deleted after 90 days</td></tr>
+<tr><td>Random device identifier</td><td>Distinguish devices, not people</td><td>Device + server</td></tr>
+</table></div>
+<p>The device id is randomly generated by the app and cannot be linked to a child's or family's real identity.</p>
+
+<h2>Permissions</h2>
+<ul><li><strong>Microphone</strong>: used only while the child holds the talk button to practice pronunciation. Audio is scored in real time and never recorded.</li></ul>
+
+<h2>Processors acting on our behalf</h2>
+<ul>
+<li><strong>Microsoft Azure Speech</strong> — real-time pronunciation assessment (audio not retained).</li>
+<li><strong>Supabase / Railway</strong> — database and server hosting (only the data listed above).</li>
+<li><strong>Sentry</strong> — technical error reporting; reports are stripped of all request content before sending.</li>
+</ul>
+
+<h2>Parents' rights</h2>
+<p>Parents may request access to, or deletion of, all data associated with their child's device by emailing the contact address above with the device id (shown in Settings → parent area). Deleting the app also deletes all on-device data.</p>
+</div>
+
+<p class="meta"><a href="index.html">Foxy Junior</a> · <a href="terms.html">Điều khoản sử dụng / Terms of Use</a></p>
+</main>
+</body>
+</html>
