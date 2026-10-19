@@ -23,7 +23,7 @@
 <body>
 <main>
 <h1>Chính sách quyền riêng tư — Foxy Junior</h1>
-<p class="meta">Ngày hiệu lực / Effective date: 07/10/2026 · Liên hệ / Contact: <a href="mailto:contact@thetwentylabs.com">contact@thetwentylabs.com</a></p>
+<p class="meta">Ngày hiệu lực / Effective date: 19/10/2026 · Liên hệ / Contact: <a href="mailto:contact@thetwentylabs.com">contact@thetwentylabs.com</a></p>
 
 <p>Foxy Junior là ứng dụng học tiếng Anh qua trò chơi phiêu lưu cho trẻ 6–8
 tuổi. Ứng dụng được thiết kế cho trẻ em, vì vậy quyền riêng tư của trẻ là
@@ -38,9 +38,12 @@ chỉ tồn tại trong chốc lát dưới dạng một file tạm duy nhất �
 có điểm, và xoá cả khi lượt nói bị gián đoạn giữa chừng.</li>
 <li><strong>Không lưu nội dung trẻ nói.</strong> Văn bản mà máy nhận dạng được từ giọng trẻ
 chỉ tồn tại trên thiết bị để hiển thị phản hồi, và không bao giờ được gửi
-lên máy chủ. Máy chủ chỉ nhận <strong>điểm số</strong> (con số).</li>
-<li><strong>Không thu thập thông tin cá nhân của trẻ</strong>: không tên thật, không ảnh,
-không email, không vị trí, không danh bạ.</li>
+lên máy chủ. Máy chủ chỉ nhận <strong>điểm số</strong> (con số) và <strong>trạng thái từng từ</strong>
+bé đã luyện (đang tập / đã nói được, kèm ngày).</li>
+<li><strong>Không thu thập thông tin cá nhân của trẻ</strong>: không tên thật (tên bé gõ lúc
+bắt đầu chỉ nằm trên thiết bị), không ảnh, không email, không vị trí, không
+danh bạ. Email chỉ có khi một <strong>phụ huynh</strong> tự đăng nhập (xem mục Tài khoản
+phụ huynh).</li>
 <li><strong>Không quảng cáo, không theo dõi (tracking) quảng cáo, không bán dữ liệu.</strong></li>
 <li><strong>Không có liên kết ra ngoài</strong> trong khu vực của trẻ; mọi liên kết ngoài và
 cài đặt nằm sau cổng phụ huynh (parental gate).</li>
@@ -55,23 +58,28 @@ cài đặt nằm sau cổng phụ huynh (parental gate).</li>
 </tr>
 </thead>
 <tbody><tr>
-<td>Tiến trình chơi (đảo, nhiệm vụ, coin, XP, vật phẩm)</td>
-<td>Lưu tiến trình học</td>
-<td>Trên thiết bị; đồng bộ lên máy chủ theo mã thiết bị ngẫu nhiên</td>
+<td>Tiến trình chơi: nhiệm vụ đã xong, coin kiếm và tiêu, XP, sao, vật phẩm đã mua, bộ đếm nhiệm vụ; <strong>avatar bé chọn</strong> (số 1–4, kèm thời điểm chọn); <strong>cấp</strong> cao nhất đã đạt; <strong>các từ bé đã luyện hoặc đã nói được</strong> — mỗi từ chỉ gồm mã từ, trạng thái (đang tập / đã nói được), ngày, và cờ cho biết lượt nói đó đã được Azure chấm hay chưa. Không kèm audio, không kèm văn bản máy nhận dạng, không kèm điểm</td>
+<td>Lưu tiến trình và hiện lại trên máy khác</td>
+<td>Trên thiết bị; đồng bộ lên máy chủ theo mã thiết bị ngẫu nhiên (hoặc theo tài khoản nếu phụ huynh đăng nhập)</td>
 </tr>
 <tr>
-<td>Điểm phát âm (chỉ con số 0–100)</td>
+<td>Tài khoản phụ huynh (chỉ khi người lớn tự đăng nhập bằng Apple hoặc Google): mã định danh tài khoản (user id), email nếu bạn chọn chia sẻ, và nhà cung cấp đăng nhập (Apple hoặc Google)</td>
+<td>Đăng nhập và đồng bộ tiến trình giữa các máy</td>
+<td>Supabase (Auth) và máy chủ của chúng tôi; không có thông tin nào về trẻ</td>
+</tr>
+<tr>
+<td>Điểm phát âm: các số điểm, thời lượng lượt nói, cờ qua/chưa qua và mã bước bài học cùng câu mẫu (nội dung của chúng tôi) — không bao giờ kèm audio hay lời bé nói</td>
 <td>Theo dõi chất lượng chấm điểm</td>
-<td>Máy chủ (không kèm audio, không kèm văn bản)</td>
+<td>Máy chủ; giữ cho tới khi có yêu cầu xoá (hiện chưa có thời hạn tự xoá riêng cho dòng điểm)</td>
 </tr>
 <tr>
 <td>Sự kiện học tập ẩn danh (vd. &quot;hoàn thành nhiệm vụ&quot;)</td>
 <td>Cải thiện ứng dụng</td>
-<td>Máy chủ, gắn với mã thiết bị ngẫu nhiên, tự động xoá sau 90 ngày</td>
+<td>Máy chủ, gắn với mã thiết bị ngẫu nhiên; giữ cho tới khi có yêu cầu xoá (email kèm mã thiết bị, hoặc xoá tài khoản đối với tiến trình gắn với tài khoản)</td>
 </tr>
 <tr>
 <td>Mã thiết bị ngẫu nhiên</td>
-<td>Phân biệt thiết bị, không định danh người</td>
+<td>Phân biệt thiết bị; tự nó không cho biết bé là ai, nhưng được gắn với tài khoản khi phụ huynh đăng nhập</td>
 <td>Thiết bị + máy chủ</td>
 </tr>
 <tr>
@@ -79,9 +87,21 @@ cài đặt nằm sau cổng phụ huynh (parental gate).</li>
 <td>Chọn đúng thông báo trong ứng dụng (vd. &quot;có đảo mới&quot;) để hiển thị</td>
 <td>Gửi kèm yêu cầu tới máy chủ, không lưu lại</td>
 </tr>
+<tr>
+<td>Sự kiện sử dụng ẩn danh (cùng loại với dòng sự kiện học tập ở trên)</td>
+<td>Thống kê tổng hợp để cải thiện ứng dụng</td>
+<td>PostHog (máy chủ tại EU), gắn với mã thiết bị ngẫu nhiên; không lưu IP, không định vị, không tạo hồ sơ người dùng</td>
+</tr>
+<tr>
+<td>Báo cáo lỗi kỹ thuật từ mã của ứng dụng (diễn biến lỗi, mã bài và bước đang học, phiên bản ứng dụng, mẫu máy, phiên bản hệ điều hành) và số liệu hiệu năng lấy mẫu</td>
+<td>Tìm và sửa lỗi, theo dõi độ mượt</td>
+<td>Sentry; không IP, không ảnh màn hình, không ghi lại màn hình, không định danh người dùng, không gửi phiên sử dụng, không có tên hay lời bé nói</td>
+</tr>
 </tbody></table></div>
-<p>Mã thiết bị do ứng dụng tự sinh ngẫu nhiên, không liên kết được với danh
-tính thực của trẻ hay gia đình.</p>
+<p>Mã thiết bị do ứng dụng tự sinh ngẫu nhiên và không chứa thông tin về bé hay gia
+đình. Khi một phụ huynh đăng nhập, tiến trình, điểm phát âm và sự kiện sử dụng
+của thiết bị đó được gắn với tài khoản của phụ huynh (xem mục Tài khoản phụ
+huynh).</p>
 <h2>Quyền truy cập hệ thống</h2>
 <ul>
 <li><strong>Micro</strong>: chỉ dùng khi trẻ bấm giữ nút nói để luyện phát âm. Âm thanh được
@@ -94,16 +114,49 @@ không rời khỏi thiết bị. Ứng dụng chỉ ghi nhận việc lời nh�
 </ul>
 <h2>Bên xử lý thay mặt chúng tôi</h2>
 <ul>
-<li><strong>Microsoft Azure Speech</strong> — chấm điểm phát âm theo thời gian thực (audio
-không được lưu).</li>
-<li><strong>Supabase / Railway</strong> — lưu trữ cơ sở dữ liệu và máy chủ (chỉ các dữ liệu
-trong bảng trên).</li>
-<li><strong>Sentry</strong> — báo lỗi kỹ thuật của máy chủ (không phải của ứng dụng). Báo
-cáo được lọc bỏ toàn bộ nội dung request trước khi gửi, và không kèm IP hay
-định danh người dùng. Ứng dụng không gửi gì tới Sentry.</li>
+<li><strong>Microsoft Azure Speech</strong> — nhận âm thanh của lượt nói để chấm điểm phát âm
+theo thời gian thực (audio không được lưu).</li>
+<li><strong>Supabase</strong> (cơ sở dữ liệu) và <strong>Railway</strong> (máy chủ của chúng tôi) — lưu trữ
+chỉ các dữ liệu trong bảng trên. Máy chủ thấy địa chỉ IP của kết nối để giới
+hạn tần suất yêu cầu (chỉ trong bộ nhớ, không lưu cùng tiến trình, điểm hay sự
+kiện); nhật ký kết nối của nền tảng lưu trữ có thể ghi IP.</li>
+<li><strong>Supabase Auth</strong> — chỉ khi phụ huynh đăng nhập: lưu email và mã tài khoản.</li>
+<li><strong>Sentry</strong> — báo lỗi kỹ thuật của ứng dụng và máy chủ. Báo cáo không kèm IP,
+ảnh màn hình hay định danh người dùng; báo cáo từ máy chủ được lọc bỏ toàn bộ
+nội dung request trước khi gửi.</li>
+<li><strong>PostHog</strong> (máy chủ tại EU) — thống kê sử dụng tổng hợp. Chỉ nhận các sự
+kiện ẩn danh nêu trong bảng trên, gắn với mã thiết bị ngẫu nhiên; không nhận
+tên, giọng nói hay câu trẻ nói, không lưu IP, không định vị, không tạo hồ sơ
+người dùng, không dùng cho quảng cáo.</li>
 <li><strong>Cloudflare Turnstile</strong> — CHỈ trên website, cho bước xác nhận &quot;không phải
 máy&quot; ở ô đăng ký sớm. Không có mặt trong ứng dụng và không xử lý dữ liệu nào
 của trẻ.</li>
+</ul>
+<h2>Tài khoản phụ huynh (tuỳ chọn)</h2>
+<p>Trẻ chơi không cần tài khoản, và không bao giờ bị hỏi đăng nhập. Trong khu vực
+phụ huynh (sau mã PIN), <strong>người lớn</strong> có thể tạo tài khoản bằng Sign in with
+Apple hoặc Google để giữ tiến trình khi đổi máy.</p>
+<ul>
+<li>Chúng tôi nhận từ Apple/Google một <strong>mã định danh tài khoản</strong> (user id) và
+<strong>email</strong> (nếu bạn chọn chia sẻ; Apple cho phép ẩn email). Supabase Auth lưu
+các thông tin này thay mặt chúng tôi, cùng với nhà cung cấp bạn đã dùng để
+đăng nhập. Không có thông tin nào về trẻ.</li>
+<li>Khi bạn đăng nhập, tiến trình chơi của thiết bị (gồm avatar, cấp và các từ đã
+nói như trong bảng trên), điểm phát âm và sự kiện sử dụng đã có của thiết bị
+đó được gắn với tài khoản để đồng bộ giữa các máy.</li>
+<li>Thông tin tài khoản chỉ dùng để đăng nhập và đồng bộ; không dùng cho quảng
+cáo, không bán, không chia sẻ.</li>
+<li><strong>Xoá tài khoản ngay trong ứng dụng</strong>: khu vực phụ huynh → Tài khoản phụ
+huynh → Xoá tài khoản. Việc này xoá vĩnh viễn tài khoản, email (người dùng
+Supabase) và tiến trình đã gắn với tài khoản trên máy chủ. Bản ghi thiết bị,
+các dòng điểm phát âm và sự kiện sử dụng được <strong>giữ lại</strong> nhưng không còn gắn
+với tài khoản. Ứng dụng vẫn chơi tiếp như khách, và tiến trình của chính thiết
+bị tiếp tục đồng bộ theo mã thiết bị. Bạn cũng có thể yêu cầu xoá qua email ở
+đầu trang.</li>
+<li><strong>Muốn xoá hết</strong>: trong khu vực phụ huynh, chép <strong>Mã thiết bị</strong> và gửi email
+cho chúng tôi để xoá dữ liệu của thiết bị đó trên máy chủ; <strong>sau khi đã gửi
+yêu cầu</strong>, bấm &quot;Xoá dữ liệu &amp; chơi lại&quot; trên máy để xoá dữ liệu trên máy và
+đăng xuất.</li>
 </ul>
 <h2>Đăng ký sớm trên website (không thuộc ứng dụng)</h2>
 <p>Trên trang web giới thiệu của chúng tôi có một ô để <strong>người trưởng thành</strong> —
@@ -136,15 +189,16 @@ chúng tôi xoá thông tin của bạn khỏi danh sách.</li>
 </ul>
 <h2>Quyền của phụ huynh</h2>
 <p>Phụ huynh có thể yêu cầu xem hoặc xoá toàn bộ dữ liệu gắn với thiết bị của
-con mình bằng cách email tới địa chỉ liên hệ ở đầu trang, kèm mã thiết bị
-(xem trong Cài đặt → khu vực phụ huynh). Xoá ứng dụng cũng xoá toàn bộ dữ
-liệu trên thiết bị.</p>
+con mình bằng cách email tới địa chỉ liên hệ ở đầu trang, kèm <strong>Mã thiết bị</strong>
+(xem trong Cài đặt → khu vực phụ huynh → Mã thiết bị, có nút sao chép), hoặc
+email từ chính tài khoản phụ huynh. &quot;Xoá dữ liệu &amp; chơi lại&quot; tạo một mã thiết
+bị mới, nên hãy gửi yêu cầu TRƯỚC khi bấm nút đó. Xoá ứng dụng cũng xoá toàn bộ
+dữ liệu trên thiết bị.</p>
 <p>Email đăng ký nhận tin ở trên <strong>không gắn với</strong> dữ liệu chơi của trẻ: chúng
 tôi cố ý không lưu bất kỳ mối liên hệ nào giữa hai thứ đó.</p>
 
 <div class="lang">
 <h1>Privacy Policy — Foxy Junior (English)</h1>
-
 <p>Foxy Junior is an adventure game that teaches English speaking to children
 aged 6–8. It is designed for kids, so children&#39;s privacy is a hard design
 constraint, not an option.</p>
@@ -158,9 +212,12 @@ momentarily, as a single temporary file — deleted as soon as the score comes
 back, and deleted just the same if the attempt is interrupted.</li>
 <li><strong>We never store what a child said.</strong> The text recognized from a child&#39;s
 speech exists only on the device to show feedback and is never sent to our
-servers. Servers receive <strong>numeric scores only</strong>.</li>
-<li><strong>We collect no personal information from children</strong>: no real names, no
-photos, no email, no location, no contacts.</li>
+servers. Servers receive <strong>numeric scores</strong> and a <strong>status per word</strong> the child
+practised (practising / said, with the day) only.</li>
+<li><strong>We collect no personal information from children</strong>: no real names (the
+first name typed at the start stays on the device), no photos, no email, no
+location, no contacts. An email address exists only when a <strong>parent</strong> signs
+in themselves (see Parent account).</li>
 <li><strong>No ads, no ad tracking, no sale of data.</strong></li>
 <li><strong>No outbound links</strong> in the child area; external links and settings sit
 behind a parental gate.</li>
@@ -175,23 +232,28 @@ behind a parental gate.</li>
 </tr>
 </thead>
 <tbody><tr>
-<td>Game progress (islands, missions, coins, XP, items)</td>
-<td>Save learning progress</td>
-<td>On device; synced to our server under a random device id</td>
+<td>Game progress: finished missions, coins earned and spent, XP, stars, owned items, quest counters; the <strong>avatar the child picked</strong> (a number 1–4, with when it was picked); the highest <strong>level</strong> reached; and the <strong>words the child has practised or said</strong> — per word only the word id, its status (practising / said), the day, and a flag for whether Azure scored that attempt. No audio, no recognised text, no score</td>
+<td>Save learning progress and show it on another device</td>
+<td>On device; synced to our server under a random device id (or to the account if a parent signs in)</td>
 </tr>
 <tr>
-<td>Pronunciation scores (numbers 0–100 only)</td>
+<td>Parent account (only when an adult signs in with Apple or Google): account identifier (user id), email if you choose to share it, and the sign-in provider (Apple or Google)</td>
+<td>Sign-in and syncing progress between devices</td>
+<td>Supabase (Auth) and our server; nothing about the child</td>
+</tr>
+<tr>
+<td>Pronunciation scores: the score numbers, how long the attempt took, a pass flag, and the lesson step id with its target sentence (our own content) — never audio or what the child said</td>
 <td>Monitor scoring quality</td>
-<td>Server (no audio, no text)</td>
+<td>Server; kept until a deletion request (there is currently no separate automatic expiry for score rows)</td>
 </tr>
 <tr>
 <td>Anonymous learning events (e.g. &quot;mission completed&quot;)</td>
 <td>Improve the app</td>
-<td>Server, keyed to a random device id, auto-deleted after 90 days</td>
+<td>Server, keyed to a random device id; kept until a deletion request (email with the device id, or deleting the account for account-linked progress)</td>
 </tr>
 <tr>
 <td>Random device identifier</td>
-<td>Distinguish devices, not people</td>
+<td>Distinguish devices; on its own it does not say who the child is, but it is linked to the account when a parent signs in</td>
 <td>Device + server</td>
 </tr>
 <tr>
@@ -199,9 +261,20 @@ behind a parental gate.</li>
 <td>Pick the right in-app message (e.g. &quot;a new island is here&quot;) to show</td>
 <td>Sent with the request to our server, not stored</td>
 </tr>
+<tr>
+<td>Anonymous usage events (the same kind as the learning events above)</td>
+<td>Aggregate statistics to improve the app</td>
+<td>PostHog (EU servers), keyed to the random device id; no IP stored, no geolocation, no user profiles</td>
+</tr>
+<tr>
+<td>Technical error reports from the app&#39;s own code (what went wrong, the mission and step being played, app version, device model, OS version) and sampled performance data</td>
+<td>Find and fix bugs, watch smoothness</td>
+<td>Sentry; no IP, no screenshots, no screen recording, no user identifier, no usage sessions, no name or anything the child said</td>
+</tr>
 </tbody></table></div>
-<p>The device id is randomly generated by the app and cannot be linked to a
-child&#39;s or family&#39;s real identity.</p>
+<p>The device id is randomly generated by the app and holds no information about
+the child or family. When a parent signs in, that device&#39;s progress, scores and
+usage events are linked to the parent&#39;s account (see Parent account).</p>
 <h2>Permissions</h2>
 <ul>
 <li><strong>Microphone</strong>: used only while the child holds the talk button to practice
@@ -215,16 +288,52 @@ switched on or opened, as an anonymous learning event listed above.</li>
 </ul>
 <h2>Processors acting on our behalf</h2>
 <ul>
-<li><strong>Microsoft Azure Speech</strong> — real-time pronunciation assessment (audio not
-retained).</li>
-<li><strong>Supabase / Railway</strong> — database and server hosting (only the data listed
-above).</li>
-<li><strong>Sentry</strong> — technical error reporting for our server (not the app).
-Reports are stripped of all request content before sending and carry no IP
-address and no user identifier. The app sends nothing to Sentry.</li>
+<li><strong>Microsoft Azure Speech</strong> — receives the audio of an attempt for real-time
+pronunciation assessment (audio not retained).</li>
+<li><strong>Supabase</strong> (database) and <strong>Railway</strong> (our server) — hosting only the data
+listed above. The server sees the connection&#39;s IP address to rate-limit
+requests (in memory only, not stored with progress, scores or events); the
+hosting platform&#39;s connection logs may record IPs.</li>
+<li><strong>Supabase Auth</strong> — only when a parent signs in: stores the email and the
+account identifier.</li>
+<li><strong>Sentry</strong> — technical error reporting for the app and the server. Reports
+carry no IP address, no screenshots and no user identifier; server reports
+are stripped of all request content before sending.</li>
+<li><strong>PostHog</strong> (EU servers) — aggregate usage statistics. It receives only the
+anonymous events listed in the table above, keyed to the random device id;
+never a name, the child&#39;s voice or what the child said. No IP is stored, no
+geolocation is done, no user profiles are created, and nothing is used for
+advertising.</li>
 <li><strong>Cloudflare Turnstile</strong> — website ONLY, for the &quot;I&#39;m not a robot&quot; check on
 the early-signup field. It is not present in the app and processes no
 children&#39;s data.</li>
+</ul>
+<h2>Parent account (optional)</h2>
+<p>Children play without an account and are never asked to sign in. Inside the
+parent area (behind the PIN) an <strong>adult</strong> may create an account with Sign in
+with Apple or Google to keep progress across devices.</p>
+<ul>
+<li>We receive an <strong>account identifier</strong> (user id) and an <strong>email address</strong> from
+Apple/Google (if you choose to share it; Apple lets you hide it). Supabase
+Auth stores these on our behalf, along with the provider you signed in with.
+Nothing about the child is collected.</li>
+<li>When you sign in, the device&#39;s game progress (including the avatar, level and
+said words listed in the table above), plus the scores and usage events the
+device already has, are linked to the account so progress can sync between
+devices.</li>
+<li>Account details are used only for sign-in and sync — never for
+advertising, never sold, never shared.</li>
+<li><strong>Delete the account inside the app</strong>: parent area → Parent account →
+Delete account. This permanently deletes the account, its email (the Supabase
+user) and the progress attached to the account on our server. The device
+record, the score rows and the usage events are <strong>kept</strong>, no longer linked to
+the account. The app keeps playing as a guest, and the device&#39;s own progress
+keeps syncing under the device id. You may also request deletion by email at
+the address above.</li>
+<li><strong>To remove everything</strong>: in the parent area copy the <strong>Device id</strong> and email
+it to us so we delete that device&#39;s data on the server; <strong>after you have sent
+the request</strong>, tap &quot;Delete data &amp; start over&quot; on the device to erase the
+on-device data and sign out.</li>
 </ul>
 <h2>Website early signup (not part of the app)</h2>
 <p>Our marketing website has a field where an <strong>adult</strong> — a parent or guardian, or
@@ -257,8 +366,10 @@ your details from the list.</li>
 </ul>
 <h2>Parents&#39; rights</h2>
 <p>Parents may request access to, or deletion of, all data associated with
-their child&#39;s device by emailing the contact address above with the device
-id (shown in Settings → parent area). Deleting the app also deletes all
+their child&#39;s device by emailing the contact address above with the <strong>Device
+id</strong> (Settings → parent area → Device id, with a copy button), or by emailing
+from the parent account itself. &quot;Delete data &amp; start over&quot; issues a new device
+id, so send the request BEFORE you tap it. Deleting the app also deletes all
 on-device data.</p>
 <p>The mailing-list address above is <strong>not linked</strong> to a child&#39;s game data: we
 deliberately store no connection between the two.</p>
